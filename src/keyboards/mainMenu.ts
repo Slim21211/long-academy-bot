@@ -14,6 +14,6 @@ export const mainMenuKeyboard = Markup.keyboard([
 
 export const aboutInlineKeyboard = Markup.inlineKeyboard([
   [Markup.button.url('Видео о компании', VIDEO.ABOUT)],
-  [Markup.button.callback('Видео пансионат', 'video_hotel')],
+  [Markup.button.callback('Видео о пансионате', 'video_hotel')],
   [Markup.button.callback('Миссия компании', 'mission')],
 ]);
