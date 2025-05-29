@@ -1,5 +1,4 @@
 import { Markup } from 'telegraf';
-import { VIDEO } from '../media/links';
 
 export const BUTTONS = {
   ABOUT: '👋 О Компании',
@@ -13,7 +12,10 @@ export const mainMenuKeyboard = Markup.keyboard([
 ]).resize();
 
 export const aboutInlineKeyboard = Markup.inlineKeyboard([
-  [Markup.button.url('Видео о компании', VIDEO.ABOUT)],
-  [Markup.button.callback('Видео о пансионате', 'video_hotel')],
-  [Markup.button.callback('Миссия компании', 'mission')],
+  [Markup.button.callback('Видео о Компании', 'video_about_company')],
+  [Markup.button.callback('Миссия и ценности Компании', 'mission')],
 ]);
+
+export const returnInlineButton = Markup.inlineKeyboard([
+  [Markup.button.callback('<< Назад', 'return_button')]
+])
