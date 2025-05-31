@@ -34,6 +34,7 @@ export function setupHandlers(bot: Telegraf<Context>) {
   bot.action('video_about_company', async (ctx) => {
     ctx.answerCbQuery('Отправка файла..');
     await ctx.replyWithVideo(Input.fromURL(VIDEO.ABOUT));
+    await ctx.reply('Вернуться в главное меню меню', returnInlineButton)
   });
 
   bot.action('mission', async (ctx) => {
