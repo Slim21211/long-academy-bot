@@ -189,5 +189,42 @@ export const PDF = {
     name: "Подсчет дыхательных движений",
     url: "https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/f1a5333bd09732617c3830e02a8b2dc5afdbf7d9/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BA%D0%B0%20038%20%D0%9C_%D0%9F%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82%20%D0%B4%D1%8B%D1%85%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9_docx.pdf"
   }
+],
+STANDARDS: [ 
+  { 
+    id: 0, 
+    name: 'Стандарты работы сиделки', 
+    url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/50181e681058111ec10c83a734e323e2f71e6c16/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D1%8B%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D1%81%D0%B8%D0%B4%D0%B5%D0%BB%D0%BA%D0%B8.pdf' 
+  },
+  { 
+    id: 1, 
+    name: 'Стандарты общения с постояльцами_Сиделка', 
+    url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/fe098d2e9cbe4d2cb93d0b03ce59c8450d4d5ac5/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D1%8B%20%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BB%D1%8C%D1%86%D0%B0%D0%BC%D0%B8_%D0%A1%D0%B8%D0%B4%D0%B5%D0%BB%D0%BA%D0%B0.pdf' 
+  }, 
+  { 
+    id: 6, 
+    name: 'Чек-лист_Сиделка', 
+    url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/fe098d2e9cbe4d2cb93d0b03ce59c8450d4d5ac5/%D0%A7%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82_%D0%A1%D0%B8%D0%B4%D0%B5%D0%BB%D0%BA%D0%B0%20final.pdf' 
+  },
+  { 
+    id: 2, 
+    name: 'Чек-лист Генеральная уборка_Санитарка', 
+    url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/fe098d2e9cbe4d2cb93d0b03ce59c8450d4d5ac5/%D0%A7%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82%20%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%83%D0%B1%D0%BE%D1%80%D0%BA%D0%B0_%D0%A1%D0%B0%D0%BD%D0%B8%D1%82%D0%B0%D1%80%D0%BA%D0%B0.pdf' 
+  }, 
+  { 
+    id: 3, 
+    name: 'Чек-лист После выезда постояльца_Санитарка', 
+    url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/fe098d2e9cbe4d2cb93d0b03ce59c8450d4d5ac5/%D0%A7%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%20%D0%B2%D1%8B%D0%B5%D0%B7%D0%B4%D0%B0%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BB%D1%8C%D1%86%D0%B0_%D0%A1%D0%B0%D0%BD%D0%B8%D1%82%D0%B0%D1%80%D0%BA%D0%B0.pdf' 
+  }, 
+   { 
+    id: 4, 
+    name: 'Чек-лист Текущая уборка_Санитарка', 
+    url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/fe098d2e9cbe4d2cb93d0b03ce59c8450d4d5ac5/%D0%A7%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82%20%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B0%D1%8F%20%D1%83%D0%B1%D0%BE%D1%80%D0%BA%D0%B0_%D0%A1%D0%B0%D0%BD%D0%B8%D1%82%D0%B0%D1%80%D0%BA%D0%B0.pdf' 
+  }, 
+  { 
+    id: 5, 
+    name: 'Чек-лист по уборке входной группы_Санитарка', 
+    url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/fe098d2e9cbe4d2cb93d0b03ce59c8450d4d5ac5/%D0%A7%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82%20%D0%BF%D0%BE%20%D1%83%D0%B1%D0%BE%D1%80%D0%BA%D0%B5%20%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D1%8B_%D0%A1%D0%B0%D0%BD%D0%B8%D1%82%D0%B0%D1%80%D0%BA%D0%B0%201.pdf' 
+  }, 
 ]
 }
