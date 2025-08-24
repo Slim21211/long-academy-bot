@@ -46,16 +46,19 @@ export function setupHandlers(bot: Telegraf<Context>) {
 
   bot.action('return_button', async (ctx) => {
     await ctx.answerCbQuery();
+    await ctx.deleteMessage();
     await ctx.reply('Выберите раздел:', mainMenuKeyboard);
   });
 
   bot.action('reminders_button', async (ctx) => {
     await ctx.answerCbQuery();
+    await ctx.deleteMessage();
     await ctx.reply('Выберите нужную памятку:', generateRemindersKeyboard(0));
   });
 
   bot.action('nurse_button', async (ctx) => {
     await ctx.answerCbQuery();
+    await ctx.deleteMessage();
     await ctx.reply('Ознакомьтесь со стандартами работы:', generateStandardsKeyboard(0));
   });
 
@@ -66,6 +69,7 @@ export function setupHandlers(bot: Telegraf<Context>) {
   });
 
   bot.action(/^reminder_(\d+)$/, async (ctx) => {
+    await ctx.deleteMessage();
     const id = parseInt(ctx.match[1], 10);
     const reminder = REMINDERS.find((r) => r.id === id);
 
@@ -85,6 +89,7 @@ export function setupHandlers(bot: Telegraf<Context>) {
   });
 
   bot.action(/^standard_(\d+)$/, async (ctx) => {
+    await ctx.deleteMessage();
     const id = parseInt(ctx.match[1], 10);
     const standard = STANDARDS.find((r) => r.id === id);
 
