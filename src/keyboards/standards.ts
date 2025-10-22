@@ -1,6 +1,8 @@
 import { Markup } from 'telegraf';
+import { PDF_CATEGORIES } from '../media/links';
 
-export const standardsMenuKeyboard = Markup.inlineKeyboard([
-  [Markup.button.callback('Стандартные операционные процедуры (СОП)', 'reminders_button')],
-  [Markup.button.callback('Стандарты работы сиделки и санитарки', 'nurse_button')],
-])
+export const standardsMenuKeyboard = Markup.inlineKeyboard(
+  PDF_CATEGORIES.map((category) => [
+    Markup.button.callback(category.buttonText, `${category.id}_button`),
+  ])
+);

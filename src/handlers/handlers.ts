@@ -3,47 +3,57 @@ import {
   BUTTONS,
   mainMenuKeyboard,
   aboutInlineKeyboard,
-  returnInlineButton
+  returnInlineButton,
 } from '../keyboards/mainMenu';
-import { PDF, PHOTO, VIDEO } from '../media/links';
+import { PDF, PDF_CATEGORIES, PHOTO, VIDEO } from '../media/links';
 import { standardsMenuKeyboard } from '../keyboards/standards';
-import { generateRemindersKeyboard } from '../pagination/reminders';
-import { generateStandardsKeyboard } from '../pagination/standards';
+import { sendPdfAndReturn, showPaginatedList } from './helpers';
+import {
+  GREETING_TEXT,
+  COMPANY_INFO_TEXT,
+  SELECT_SECTION_TEXT,
+  RETURN_TEXT,
+} from '../config';
+import { generatePaginatedKeyboard } from '../pagination/paginatedKeyboard';
 
-const greetingText = 'Добро пожаловать в обучающий бот Академии Долголетия! 🎉 Мы рады видеть Вас здесь. Этот бот создан, чтобы помочь Вам развивать свои навыки и получать полезную информацию для работы в пансионатах. Ваш опыт и знания — это залог комфорта и счастья наших постояльцев!😊';
+const { MISSION } = PDF;
 
-const { REMINDERS, STANDARDS } = PDF;
+// ✅ ДИНАМИЧЕСКИЙ REGEX из PDF_CATEGORIES
+const CATEGORIES_REGEX = PDF_CATEGORIES.map((cat) => cat.id).join('|');
+const BUTTON_REGEX = new RegExp(`^(${CATEGORIES_REGEX})_button$`);
 
 export function setupHandlers(bot: Telegraf<Context>) {
+  // Основные команды
   bot.start((ctx) => {
-    ctx.reply(greetingText, mainMenuKeyboard);
+    ctx.reply(GREETING_TEXT, mainMenuKeyboard);
   });
 
   bot.hears(BUTTONS.ABOUT, (ctx) => {
-    ctx.reply('Посмотрите медиаматериалы, чтобы больше узнать о нашей компании', aboutInlineKeyboard);
+    ctx.reply(COMPANY_INFO_TEXT, aboutInlineKeyboard);
   });
 
   bot.hears(BUTTONS.STANDARDS, async (ctx) => {
-    await ctx.reply('Выберите интересующий раздел:', standardsMenuKeyboard);
+    await ctx.reply(SELECT_SECTION_TEXT, standardsMenuKeyboard);
   });
 
   bot.hears(BUTTONS.FRIENDS, async (ctx) => {
     await ctx.replyWithPhoto(Input.fromURL(PHOTO.FRIENDS));
-     ctx.reply('Вернуться в главное меню меню', returnInlineButton)
+    await ctx.reply(RETURN_TEXT, returnInlineButton);
   });
 
+  // Обработчики inline кнопок
   bot.action('video_about_company', async (ctx) => {
     ctx.answerCbQuery('Отправка файла..');
     await ctx.deleteMessage();
     await ctx.replyWithVideo(Input.fromURL(VIDEO.ABOUT));
-    await ctx.reply('Вернуться в главное меню меню', returnInlineButton)
+    await ctx.reply(RETURN_TEXT, returnInlineButton);
   });
 
   bot.action('mission', async (ctx) => {
     ctx.answerCbQuery('Отправка файла..');
     await ctx.deleteMessage();
-    await ctx.replyWithDocument(Input.fromURL(PDF.MISSION));
-    await ctx.reply('Вернуться в главное меню меню', returnInlineButton)
+    await ctx.replyWithDocument(Input.fromURL(MISSION));
+    await ctx.reply(RETURN_TEXT, returnInlineButton);
   });
 
   bot.action('return_button', async (ctx) => {
@@ -52,55 +62,28 @@ export function setupHandlers(bot: Telegraf<Context>) {
     await ctx.reply('Выберите раздел:', mainMenuKeyboard);
   });
 
-  bot.action('reminders_button', async (ctx) => {
+  // ✅ УНИВЕРСАЛЬНЫЙ обработчик для ВСЕХ кнопок категорий
+  bot.action(BUTTON_REGEX, async (ctx) => {
+    const categoryId = ctx.match![1];
+    await showPaginatedList(ctx, categoryId);
+  });
+
+  // ✅ УНИВЕРСАЛЬНАЯ пагинация
+  bot.action(/^(\w+)_page_(\d+)$/, async (ctx) => {
+    const categoryId = ctx.match![1];
+    const page = parseInt(ctx.match![2], 10);
+
     await ctx.answerCbQuery();
+    await ctx.editMessageReplyMarkup(
+      generatePaginatedKeyboard(categoryId, page).reply_markup
+    );
+  });
+
+  // ✅ УНИВЕРСАЛЬНЫЙ выбор PDF
+  bot.action(/^(\w+)_(\d+)$/, async (ctx) => {
     await ctx.deleteMessage();
-    await ctx.reply('Выберите нужную памятку:', generateRemindersKeyboard(0));
-  });
-
-  bot.action('nurse_button', async (ctx) => {
-    await ctx.answerCbQuery();
-    await ctx.deleteMessage();
-    await ctx.reply('Ознакомьтесь со стандартами работы:', generateStandardsKeyboard(0));
-  });
-
-  bot.action(/^reminder_page_(\d+)$/, async (ctx) => {
-    const page = parseInt(ctx.match[1], 10);
-    await ctx.answerCbQuery();
-    await ctx.editMessageReplyMarkup(generateRemindersKeyboard(page).reply_markup);
-  });
-
-  bot.action(/^reminder_(\d+)$/, async (ctx) => {
-    await ctx.deleteMessage();
-    const id = parseInt(ctx.match[1], 10);
-    const reminder = REMINDERS.find((r) => r.id === id);
-
-    if (reminder) {
-      await ctx.answerCbQuery('Отправка памятки...');
-      await ctx.replyWithDocument({ url: reminder.url, filename: reminder.name + '.pdf' });
-      await ctx.reply('Вернуться в главное меню меню', returnInlineButton)
-    } else {
-      await ctx.answerCbQuery('Памятка не найдена');
-    }
-  });
-
-  bot.action(/^standard_page_(\d+)$/, async (ctx) => {
-    const page = parseInt(ctx.match[1], 10);
-    await ctx.answerCbQuery();
-    await ctx.editMessageReplyMarkup(generateStandardsKeyboard(page).reply_markup);
-  });
-
-  bot.action(/^standard_(\d+)$/, async (ctx) => {
-    await ctx.deleteMessage();
-    const id = parseInt(ctx.match[1], 10);
-    const standard = STANDARDS.find((r) => r.id === id);
-
-    if (standard) {
-      await ctx.answerCbQuery('Отправка файла...');
-      await ctx.replyWithDocument({ url: standard.url, filename: standard.name + '.pdf' });
-      await ctx.reply('Вернуться в главное меню меню', returnInlineButton)
-    } else {
-      await ctx.answerCbQuery('Памятка не найдена');
-    }
+    const categoryId = ctx.match![1];
+    const docId = parseInt(ctx.match![2], 10);
+    await sendPdfAndReturn(ctx, categoryId, docId);
   });
 }
