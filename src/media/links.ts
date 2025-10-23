@@ -75,33 +75,33 @@ export const PDF_CATEGORIES = [
       },
       {
         id: 3,
-        name: 'СОП 003 Дезинфекция пульсоксиметра',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20003%20%D0%94%D0%B5%D0%B7%D0%B8%D0%BD%D1%84%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%BE%D0%BA%D1%81%D0%B8%D0%BC%D0%B5%D1%82%D1%80%D0%B0.pdf',
+        name: 'СОП 003 М Дезинфекция пульсоксиметра',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20003%20%D0%9C%20%D0%94%D0%B5%D0%B7%D0%B8%D0%BD%D1%84%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%BE%D0%BA%D1%81%D0%B8%D0%BC%D0%B5%D1%82%D1%80%D0%B0.pdf',
       },
       {
         id: 4,
-        name: 'СОП 004 Дезинфекция тонометра',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20004%20%D0%94%D0%B5%D0%B7%D0%B8%D0%BD%D1%84%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B0.pdf',
+        name: 'СОП 004 М Дезинфекция тонометра',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20004%20%D0%9C%20%D0%94%D0%B5%D0%B7%D0%B8%D0%BD%D1%84%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B0.pdf',
       },
       {
         id: 5,
-        name: 'СОП 005 Дезинфекция фонендоскопа',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20005%20%D0%94%D0%B5%D0%B7%D0%B8%D0%BD%D1%84%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%84%D0%BE%D0%BD%D0%B5%D0%BD%D0%B4%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B0.pdf',
+        name: 'СОП 005 М Дезинфекция фонендоскопа',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20005%20%D0%9C%20%D0%94%D0%B5%D0%B7%D0%B8%D0%BD%D1%84%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%84%D0%BE%D0%BD%D0%B5%D0%BD%D0%B4%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B0.pdf',
       },
       {
         id: 6,
-        name: 'СОП 006 Постановка мочевого катетера',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20006%20%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%87%D0%B5%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D1%82%D0%B5%D1%82%D0%B5%D1%80%D0%B0.pdf',
+        name: 'СОП 006 М Постановка мочевого катетера',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20006%20%D0%9C%20%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%87%D0%B5%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D1%82%D0%B5%D1%82%D0%B5%D1%80%D0%B0.pdf',
       },
       {
         id: 7,
-        name: 'СОП 007 Уход за постоянным мочевым катетером',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20007%20%D0%A3%D1%85%D0%BE%D0%B4%20%D0%B7%D0%B0%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D0%BC%20%20%D0%BC%D0%BE%D1%87%D0%B5%D0%B2%D1%8B%D0%BC%20%20%D0%BA%D0%B0%D1%82%D0%B5%D1%82%D0%B5%D1%80%D0%BE%D0%BC.pdf',
+        name: 'СОП 007 М Уход за постоянным мочевым катетером',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20007%20%D0%9C%20%D0%A3%D1%85%D0%BE%D0%B4%20%D0%B7%D0%B0%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D0%BC%20%20%D0%BC%D0%BE%D1%87%D0%B5%D0%B2%D1%8B%D0%BC%20%20%D0%BA%D0%B0%D1%82%D0%B5%D1%82%D0%B5%D1%80%D0%BE%D0%BC.pdf',
       },
       {
         id: 8,
-        name: 'СОП 008 Надевание и снятие стерильных перчаток',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20008%20%D0%9D%D0%B0%D0%B4%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D1%81%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%20%D1%81%D1%82%D0%B5%D1%80%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BF%D0%B5%D1%80%D1%87%D0%B0%D1%82%D0%BE%D0%BA_docx.pdf',
+        name: 'СОП 008 М Надевание и снятие стерильных перчаток',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20008%20%D0%9C%20%D0%9D%D0%B0%D0%B4%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D1%81%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%20%D1%81%D1%82%D0%B5%D1%80%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BF%D0%B5%D1%80%D1%87%D0%B0%D1%82%D0%BE%D0%BA_docx.pdf',
       },
       {
         id: 9,
@@ -210,28 +210,28 @@ export const PDF_CATEGORIES = [
       },
       {
         id: 30,
-        name: 'СОП 030 Закапывание капель в глаза',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20030%20%D0%97%D0%B0%D0%BA%D0%B0%D0%BF%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D0%BF%D0%B5%D0%BB%D1%8C%20%D0%B2%20%D0%B3%D0%BB%D0%B0%D0%B7%D0%B0.pdf',
+        name: 'СОП 030 М Закапывание капель в глаза',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20030%20%D0%9C%20%D0%97%D0%B0%D0%BA%D0%B0%D0%BF%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D0%BF%D0%B5%D0%BB%D1%8C%20%D0%B2%20%D0%B3%D0%BB%D0%B0%D0%B7%D0%B0.pdf',
       },
       {
         id: 31,
-        name: 'СОП 031 Измерение АД',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20031%20%20%D0%98%D0%B7%D0%BC%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%90%D0%94.pdf',
+        name: 'СОП 031 М Измерение АД',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20031%20%20%D0%9C%20%D0%98%D0%B7%D0%BC%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%90%D0%94.pdf',
       },
       {
         id: 32,
-        name: 'СОП 032 Внутривенное капельное введение лекарственных средств',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20032%20%D0%92%D0%BD%D1%83%D1%82%D1%80%D0%B8%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BA%D0%B0%D0%BF%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2.pdf',
+        name: 'СОП 032 М Внутривенное капельное введение лекарственных средств',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20032%20%D0%9C%20%D0%92%D0%BD%D1%83%D1%82%D1%80%D0%B8%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BA%D0%B0%D0%BF%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2.pdf',
       },
       {
         id: 33,
-        name: 'СОП 033 Закапывание капель в уши',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20033%20%20%D0%97%D0%B0%D0%BA%D0%B0%D0%BF%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D0%BF%D0%B5%D0%BB%D1%8C%20%D0%B2%20%D1%83%D1%88%D0%B8.pdf',
+        name: 'СОП 033 М Закапывание капель в уши',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20033%20%20%D0%9C%20%D0%97%D0%B0%D0%BA%D0%B0%D0%BF%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D0%BF%D0%B5%D0%BB%D1%8C%20%D0%B2%20%D1%83%D1%88%D0%B8.pdf',
       },
       {
         id: 34,
-        name: 'СОП 034 Подсчет дыхательных движений',
-        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20034%20%D0%9F%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82%20%D0%B4%D1%8B%D1%85%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9.pdf',
+        name: 'СОП 034 М Подсчет дыхательных движений',
+        url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20034%20%D0%9C%20%D0%9F%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82%20%D0%B4%D1%8B%D1%85%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9.pdf',
       },
       {
         id: 35,
@@ -245,7 +245,7 @@ export const PDF_CATEGORIES = [
       },
       {
         id: 37,
-        name: 'СОП 037 Алгоритм действий при ОРВИ',
+        name: 'СОП 037 М Алгоритм действий при ОРВИ',
         url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20037%20%D0%9C%20%20%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%20%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B9%20%D0%BC%D0%B5%D0%B4%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%BF%D1%80%D0%B8%20%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%B8%20%D0%B2%20%D1%81%D1%82%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D1%80%D0%BD%D1%8B%D1%85%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%D1%85%20%D0%BF%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%20%D1%81%20%D0%9E%D0%A0%D0%92%D0%98.pdf',
       },
       {
@@ -255,7 +255,7 @@ export const PDF_CATEGORIES = [
       },
       {
         id: 40,
-        name: 'СОП 040 Алгоритм действий при остром коронарном синдроме',
+        name: 'СОП 040 М Алгоритм действий при остром коронарном синдроме',
         url: 'https://raw.githubusercontent.com/Slim21211/long-academy-bot-media/main/SOP/%D0%A1%D0%9E%D0%9F%20040%20%D0%9C%20%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%20%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B9%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%B8%20%D0%BF%D1%80%D0%B8%20%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%BC%20%D0%BA%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%D1%80%D0%BD%D0%BE%D0%BC%20%D1%81%D0%B8%D0%BD%D0%B4%D1%80%D0%BE%D0%BC%D0%B5.pdf',
       },
       {
